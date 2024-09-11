@@ -32,7 +32,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 
     // Verifica se o email corresponde ao cadastrado
     if (usuario && usuario.email === loginEmail) {
-        document.getElementById('mensagem').innerText = 'Seja bem-vindo,' ${usuario.nome}, 'ao Team Impacta!';
+        document.getElementById('mensagem').innerText = 'Seja bem-vindo,' + usuario.nome + 'ao Team Impacta!';
     } else {
         alert('Email não encontrado. Faça o cadastro primeiro.');
     }
